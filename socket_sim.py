@@ -5,7 +5,7 @@ class SocketSimulationApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Memory Rubber Socket Contact Simulator")
-        self.root.geometry("1000x700")
+        self.root.geometry("1280x720")
         self.root.resizable(False, False)
         
         self.SCALE = 25
@@ -27,12 +27,12 @@ class SocketSimulationApp:
         input_group.pack(fill="x", pady=5)
         
         self.vars = {
-            "s_max": tk.DoubleVar(value=1.2),
-            "s_hard": tk.DoubleVar(value=0.8),
+            "s_max": tk.DoubleVar(value=0.55),
+            "s_hard": tk.DoubleVar(value=0.4),
             "d_h": tk.DoubleVar(value=10.0),
             "g_h": tk.DoubleVar(value=4.5),
-            "i_h": tk.DoubleVar(value=4.5),
-            "h_g": tk.DoubleVar(value=1.0)
+            "i_h": tk.DoubleVar(value=5.0),
+            "h_g": tk.DoubleVar(value=0.9)
         }
         self.slider_labels = {}
         
